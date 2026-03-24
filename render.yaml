@@ -10,8 +10,4 @@ services:
       - key: PORT
         value: 3001
       - key: DB_PATH
-        value: /var/data/eventsync.db
-    disk:
-      name: eventsync-db
-      mountPath: /var/data
-      sizeGB: 1
+        value: /tmp/eventsync.db
