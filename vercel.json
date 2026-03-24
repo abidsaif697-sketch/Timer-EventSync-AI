@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "eventsync-ai-frontend",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://eventsync-ai-server.onrender.com/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

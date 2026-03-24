@@ -33,7 +33,7 @@ import { io } from 'socket.io-client'
 
 const route = useRoute()
 const code = route.params.code?.toUpperCase()
-const socket = io()
+const socket = io('https://eventsync-ai-server.onrender.com')
 
 const agenda = ref([])
 const currentIndex = ref(0)

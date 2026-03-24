@@ -229,7 +229,7 @@ const route = useRoute()
 const code = route.params.code?.toUpperCase()
 const hostKey = route.query.key
 
-const socket = io()
+const socket = io('https://eventsync-ai-server.onrender.com')
 const loading = ref(true)
 const branding = ref(null)
 const agenda = ref([])
